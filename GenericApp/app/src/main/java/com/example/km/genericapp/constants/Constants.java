@@ -13,8 +13,5 @@ public class Constants {
     public static final String ENCODING_UTF_8 = "UTF-8";
     public static final String APPLICATION_JSON = "application/json";
     public static final String EMPTY_JSON_BODY = "{}";
-
-
     public static final String COMMA = ",";
-
 }
