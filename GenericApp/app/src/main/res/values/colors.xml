@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Standard Theme Colors -->
+    <color name="colorPrimary">@color/screen_fg_color</color>
+    <color name="colorPrimaryDark">@color/MidnightBlue</color>
+    <color name="colorAccent">@color/IndianRed</color>
+
+    <!-- Standard View Colors -->
+    <color name="action_bar_bg_color">@color/Navy</color>
+    <color name="action_bar_fg_color">@color/White</color>
+    <color name="screen_bg_color">@color/White</color>
+    <color name="screen_fg_color">@color/Navy</color>
+    <color name="button_bg_color">@color/screen_bg_color</color>
+    <color name="button_fg_color">@color/screen_fg_color</color>
+    <color name="button_border_color">@color/screen_fg_color</color>
+    <color name="header_fg_color">@color/screen_fg_color</color>
+    <color name="text_fg_color">@color/screen_fg_color</color>
+    <color name="divider_color">@color/silver</color>
+    <color name="error_bg_color">@android:color/holo_red_dark</color>
+
+    <!-- Secondary View Colors -->
+    <color name="secondary_screen_bg_color">@color/SilverLakeBlue</color>
+    <color name="secondary_button_bg_color">@color/screen_fg_color</color>
+    <color name="secondary_button_fg_color">@color/screen_bg_color</color>
+    <color name="secondary_button_border_color">@color/screen_bg_color</color>
+    <color name="secondary_text_fg_color">@color/screen_bg_color</color>
+
+    <!-- Alternate View Colors -->
+    <color name="alternate_screen_bg_color">@color/SilverLakeBlue</color>
+    <color name="alternate_text_fg_color">@color/Grey</color>
+    <color name="alternate_error_bg_color">@color/Grey</color>
+
+    <!-- Additional Colors -->
+    <color name="silver">#C0C0C0</color>
+    <color name="transparent">#00000000</color>
+    <color name="twilightblue">#212172</color>
+
+    <!-- Base Colors -->
+    <color name="White">#FFFFFF</color>
+    <color name="Snow">#FFFAFA</color>
+    <color name="Gold">#FFD700</color>
+    <color name="Orange">#FFA500</color>
+    <color name="DarkOrange">#FF8C00</color>
+    <color name="SilverLakeBlue">#5D89BA</color>
+    <color name="SteelBlue">#4682B4</color>
+    <color name="RoyalBlue">#4169E1</color>
+    <color name="MidnightBlue">#191970</color>
+    <color name="Blue">#0000FF</color>
+    <color name="MediumBlue">#0000CD</color>
+    <color name="DarkBlue">#00008B</color>
+    <color name="Navy">#000080</color>
+    <color name="Black">#000000</color>
+    <color name="Grey">#7F7F7F</color>
+    <color name="DarkGrey">#4F4F4F</color>
+    <color name="TransparentGrey">#7F000000</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="SkyBlue">#87CEEB</color>
+    <color name="Salmon">#FA8072</color>
+    <color name="LightCoral">#F08080</color>
+    <color name="DarkSalmon">#E9967A</color>
+    <color name="PaleVioletRed">#DB7093</color>
+    <color name="IndianRed">#CD5C5C</color>
+</resources>

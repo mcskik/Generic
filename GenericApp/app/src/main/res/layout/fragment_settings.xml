@@ -1,0 +1,37 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@color/alternate_screen_bg_color"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
+
+            <Button
+                android:id="@+id/btnPosts"
+                style="@style/StandardButton"
+                android:drawableLeft="@drawable/ic_posts_alternate"
+                android:text="@string/action_posts" />
+
+            <Button
+                android:id="@+id/btnRecipes"
+                style="@style/StandardButton"
+                android:drawableLeft="@drawable/ic_search_alternate"
+                android:text="@string/action_recipes" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

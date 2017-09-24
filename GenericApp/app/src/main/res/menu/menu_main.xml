@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MainActivity">
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:title="@string/action_home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_posts"
+        android:orderInCategory="110"
+        android:title="@string/action_posts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_recipes"
+        android:orderInCategory="120"
+        android:title="@string/action_recipes"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_versions"
+        android:orderInCategory="130"
+        android:title="@string/action_versions"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="140"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

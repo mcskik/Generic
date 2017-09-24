@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Generic App</string>
+
+    <!-- Navigation drawer -->
+    <string name="action_home">Home</string>
+    <string name="action_posts">Posts</string>
+    <string name="action_recipes">Recipes</string>
+    <string name="action_versions">Versions</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_drawer_open">@string/app_name</string>
+    <string name="title_drawer_close">@string/app_name</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+
+    <!-- Labels -->
+    <string name="label_post_title">Post title :</string>
+    <string name="label_post_body">Post body</string>
+    <string name="label_user_name">User name :</string>
+    <string name="label_number_of_comments">Number of comments :</string>
+
+    <!-- Hints -->
+    <string name="hint_search_for_recipe">Search for a recipe</string>
+
+    <!-- Messages -->
+    <string name="fab_action">Action</string>
+    <string name="fab_click_message">Email sent ...</string>
+    <string name="api_call_complete">API call complete</string>
+    <string name="api_call_error">"Error : "</string>
+
+    <!-- Embedded Assets -->
+    <string name="posts_json_file">posts.json</string>
+    <string name="users_json_file">users.json</string>
+    <string name="comments_json_file">comments.json</string>
+</resources>

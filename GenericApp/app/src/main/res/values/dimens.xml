@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="card_corner_radius">5dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_pico">1dp</dimen>
+    <dimen name="margin_zero">0dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_tiny">3dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_width">10000dp</dimen>
+    <dimen name="prefix_size">55dp</dimen>
+    <dimen name="icon_size">32dp</dimen>
+    <dimen name="text_size_larger">22dp</dimen>
+    <dimen name="text_size_large">20dp</dimen>
+    <dimen name="text_size_normal">18dp</dimen>
+    <dimen name="text_size_medium">15dp</dimen>
+    <dimen name="text_size_small">10dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_text_size">15dp</dimen>
+    <dimen name="actionbar_height">48dp</dimen>
+</resources>

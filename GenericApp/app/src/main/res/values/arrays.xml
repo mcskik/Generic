@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_drawer_items_array">
+        <item>@string/action_home</item>
+        <item>@string/action_posts</item>
+        <item>@string/action_recipes</item>
+        <item>@string/action_versions</item>
+        <item>@string/action_settings</item>
+    </string-array>
+</resources>

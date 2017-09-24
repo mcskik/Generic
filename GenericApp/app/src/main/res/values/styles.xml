@@ -1,0 +1,154 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/screen_bg_color</item>
+        <item name="android:textColor">@color/text_fg_color</item>
+        <item name="android:actionMenuTextColor">@color/text_fg_color</item>
+        <item name="actionMenuTextColor">@color/text_fg_color</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance</item>
+        <item name="android:actionBarStyle">@style/StandardActionBar</item>
+        <item name="actionBarStyle">@style/StandardActionBar</item>
+        <item name="android:popupMenuStyle">@style/StandardPopupMenu</item>
+        <item name="popupMenuStyle">@style/StandardPopupMenu</item>
+        <item name="android:textColorAlertDialogListItem">@color/text_fg_color</item>
+        <item name="textColorAlertDialogListItem">@color/text_fg_color</item>
+        <item name="android:textColorPrimary">@color/text_fg_color</item>
+        <item name="android:textColorSecondary">@color/text_fg_color</item>
+        <item name="actionOverflowMenuStyle">@style/PopupOverflowMenu</item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="StandardButton" parent="@android:style/Widget.Holo.Button">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:background">@drawable/standard_button_selector</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/button_fg_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StandardHeaderText" parent="AppTheme">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/text_fg_color</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StandardActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/action_bar_bg_color</item>
+        <item name="background">@color/action_bar_bg_color</item>
+    </style>
+
+    <!-- Background color for Action Bar overflow menu -->
+    <style name="StandardPopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/screen_bg_color</item>
+        <item name="android:textColor">@color/text_fg_color</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/button_fg_color</item>
+        <item name="colorControlActivated">@color/text_fg_color</item>
+        <item name="colorControlHighlight">@color/text_fg_color</item>
+    </style>
+
+    <style name="StandardAlertDialog">
+        <item name="android:windowBackground">@color/screen_bg_color</item>
+        <item name="android:windowTitleStyle">@style/StandardAlertDialogTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textAppearanceMedium">@style/StandardAlertTextAppearance</item>
+        <item name="android:buttonBarButtonStyle">@style/StandardAlertDialogButton</item>
+    </style>
+
+    <style name="StandardAlertDialogTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="StandardAlertTextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_fg_color</item>
+    </style>
+
+    <style name="StandardAlertDialogButton">
+        <!-- Set background drawable and text size of the buttons here -->
+        <!-- <item name="android:background">@color/standard_button_bg_color</item> -->
+        <item name="android:layout_width">60dp</item>
+        <item name="android:background">@drawable/standard_dialog_button_appearance_normal</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/button_fg_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:background">@color/screen_bg_color</item>
+        <item name="android:textColor">@color/text_fg_color</item>
+    </style>
+
+    <style name="PopupMenuTextView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:textColor">@color/text_fg_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PopupOverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/text_fg_color</item>
+    </style>
+
+    <style name="tab">
+        <item name="android:textColor">@color/text_fg_color</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="tab.standard">
+        <item name="android:background">@drawable/tab_unselected</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="tabDivider">
+        <item name="android:background">@color/text_fg_color</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/margin_pico</item>
+        <item name="android:layout_marginBottom">@dimen/margin_pico</item>
+    </style>
+</resources>
