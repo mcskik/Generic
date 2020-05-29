@@ -1,0 +1,67 @@
+// Copy APK to target folder after build completes.
+afterEvaluate { project ->
+    project.tasks.each { Task task ->
+        boolean needsCopy = false
+        // Internal package id.
+        if (task.name.equals("assembleInternalRelease")) {
+            needsCopy = true
+        }
+        // External package id.
+        if (task.name.equals("assembleExternalMaster")) {
+            needsCopy = true
+        }
+        // Copy Apk.
+        if (needsCopy) {
+            task.doLast {
+                println "After Build Action"
+                String taskName = task.name
+                if (taskToApkFileSpecMap.containsKey(taskName)) {
+                    String apkFileSpec = taskToApkFileSpecMap.get(taskName)
+                    def targetPath = file(project.APK_TARGET_FOLDER)
+                    if (targetPath.list().contains(apkFileSpec)) {
+                        throw new GradleException("Build ${apkFileSpec} already exists in target folder")
+                    }
+                    ext.apk = file(apkFileSpec)
+                    if (ext.apk.exists()) {
+                        println "Copying ${apkFileSpec} to target folder"
+                        copy {
+                            from ext.apk.absolutePath
+                            into targetPath
+                            rename { ext.apk.name }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Android build.
+android {
+    buildTypes {
+        debug {
+        }
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.unified
+        }
+        dev.initWith(buildTypes.release)
+        dev {
+            signingConfig signingConfigs.unified
+        }
+        master.initWith(buildTypes.release)
+        master {
+            signingConfig signingConfigs.unified
+        }
+    }
+
+    productFlavors {
+        internal {
+        }
+        external {
+        }
+    }
+
+}
